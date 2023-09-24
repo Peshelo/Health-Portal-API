@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+
+  frontend:
+    build: ./frontend
+    container_name: nuxt-frontend
+    ports:
+      - "3000:3000"
+    command: "npm run start"
+
+  api:
+    container_name: patient_portal_container
+    image: patient_portal_image
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database
+    environment:
+      - MYSQL_HOST=database
+      - MYSQL_USERNAME=munashe
+      - MYSQL_PASSWORD=stabnashiamunashe
+      - MYSQL_DATABASE=patientportaldb
+      - MYSQL_PORT=3306
+
+
+  database:
+    container_name: patientportaldb
+    image: mysql:latest
+    environment:
+      - MYSQL_USER=munashe
+      - MYSQL_PASSWORD=stabnashiamunashe
+      - MYSQL_DATABASE=patientportaldb
+      - MYSQL_ROOT_PASSWORD=stabnashiamunashe
+    volumes:
+      - dbinfo:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    restart: always
+
+volumes:
+  dbinfo:

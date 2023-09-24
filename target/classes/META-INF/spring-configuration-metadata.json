@@ -1,0 +1,82 @@
+{
+  "groups": [
+    {
+      "name": "azure.myblob",
+      "type": "tech.stabnashiamunashe.DoctorPatientPortal.Services.AzureBlobProperties",
+      "sourceType": "tech.stabnashiamunashe.DoctorPatientPortal.Services.AzureBlobProperties"
+    },
+    {
+      "name": "paynow",
+      "type": "tech.stabnashiamunashe.DoctorPatientPortal.Payments.Paynow.Configs.PaynowProperties",
+      "sourceType": "tech.stabnashiamunashe.DoctorPatientPortal.Payments.Paynow.Configs.PaynowProperties"
+    },
+    {
+      "name": "paypal",
+      "type": "tech.stabnashiamunashe.DoctorPatientPortal.Payments.PayPal.PayPalProperties",
+      "sourceType": "tech.stabnashiamunashe.DoctorPatientPortal.Payments.PayPal.PayPalProperties"
+    },
+    {
+      "name": "rsa",
+      "type": "tech.stabnashiamunashe.DoctorPatientPortal.Security.Configs.RSAKeyProperties",
+      "sourceType": "tech.stabnashiamunashe.DoctorPatientPortal.Security.Configs.RSAKeyProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "azure.myblob.connectionstring",
+      "type": "java.lang.String",
+      "sourceType": "tech.stabnashiamunashe.DoctorPatientPortal.Services.AzureBlobProperties"
+    },
+    {
+      "name": "azure.myblob.container",
+      "type": "java.lang.String",
+      "sourceType": "tech.stabnashiamunashe.DoctorPatientPortal.Services.AzureBlobProperties"
+    },
+    {
+      "name": "paynow.integration-id",
+      "type": "java.lang.String",
+      "sourceType": "tech.stabnashiamunashe.DoctorPatientPortal.Payments.Paynow.Configs.PaynowProperties"
+    },
+    {
+      "name": "paynow.integration-key",
+      "type": "java.lang.String",
+      "sourceType": "tech.stabnashiamunashe.DoctorPatientPortal.Payments.Paynow.Configs.PaynowProperties"
+    },
+    {
+      "name": "paynow.result-url",
+      "type": "java.lang.String",
+      "sourceType": "tech.stabnashiamunashe.DoctorPatientPortal.Payments.Paynow.Configs.PaynowProperties"
+    },
+    {
+      "name": "paynow.return-url",
+      "type": "java.lang.String",
+      "sourceType": "tech.stabnashiamunashe.DoctorPatientPortal.Payments.Paynow.Configs.PaynowProperties"
+    },
+    {
+      "name": "paypal.client-id",
+      "type": "java.lang.String",
+      "sourceType": "tech.stabnashiamunashe.DoctorPatientPortal.Payments.PayPal.PayPalProperties"
+    },
+    {
+      "name": "paypal.client-secret",
+      "type": "java.lang.String",
+      "sourceType": "tech.stabnashiamunashe.DoctorPatientPortal.Payments.PayPal.PayPalProperties"
+    },
+    {
+      "name": "paypal.mode",
+      "type": "java.lang.String",
+      "sourceType": "tech.stabnashiamunashe.DoctorPatientPortal.Payments.PayPal.PayPalProperties"
+    },
+    {
+      "name": "rsa.private-key",
+      "type": "java.security.interfaces.RSAPrivateKey",
+      "sourceType": "tech.stabnashiamunashe.DoctorPatientPortal.Security.Configs.RSAKeyProperties"
+    },
+    {
+      "name": "rsa.public-key",
+      "type": "java.security.interfaces.RSAPublicKey",
+      "sourceType": "tech.stabnashiamunashe.DoctorPatientPortal.Security.Configs.RSAKeyProperties"
+    }
+  ],
+  "hints": []
+}
